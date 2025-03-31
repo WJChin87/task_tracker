@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 
 mongoose
   .connect(
-    "mongodb+srv://wingjoechin:tSJTcnz9LklZ15VS@backenddb.p5oxk.mongodb.net/Task-Tracker-API?retryWrites=true&w=majority&appName=BackendDb"
+    `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@backenddb.p5oxk.mongodb.net/?retryWrites=true&w=majority&appName=BackendDb`
   )
   .then(() => {
     console.log("Connected to database!");
