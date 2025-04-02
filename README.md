@@ -1,3 +1,4 @@
+** In Progress **
 # Task Tracker
 
 A simple task management app with user accounts, built with Node.js and MongoDB.
@@ -51,5 +52,3 @@ views/ - Website pages (EJS templates)
 public/ - CSS and JavaScript files
 
 app.js - Main application setup
-
-# In Progress
