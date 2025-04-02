@@ -14,18 +14,19 @@ A simple task management app with user accounts, built with Node.js and MongoDB.
 1. Make sure you have:
    - Node.js (v18 or newer)
    - MongoDB (local or Atlas)
-
 2. Install dependencies:
 ```bash
 npm install
 ```
-
-3. Create a .env file:
+3. Install needed packages:
 ```bash
-cp .env.example .env
+npm install express mongoose dotenv
 ```
-
-4. Add your MongoDB connection to .env:
+4. Create a .env file:
+```bash
+touch .env
+```
+5. Add your MongoDB connection to .env:
 ```bash
 MONGODB_URI=mongodb://localhost:27017/task_tracker
 ```
@@ -34,7 +35,7 @@ MONGODB_URI=mongodb://localhost:27017/task_tracker
 
 Start the server:
 ```bash
-npm start
+npm run dev
 ```
 
 Open in your browser:
@@ -44,11 +45,5 @@ http://localhost:3000
 
 Project Structure
 controllers/ - Handles task and user logic
-
 models/ - Database models
-
-views/ - Website pages (EJS templates)
-
-public/ - CSS and JavaScript files
-
-app.js - Main application setup
+index.js - Main application setup
